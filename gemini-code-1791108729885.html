@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Kiểm Tra Tiếng Anh - Lớp 12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .subtitle {
+            text-align: center;
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        .student-info {
+            background-color: #ebf8ff;
+            border: 1px solid #bee3f8;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .info-item {
+            width: 100%;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #2d3748;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .instruction {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2b6cb0;
+        }
+        .question-card {
+            background-color: #fafafa;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .options li {
+            margin-bottom: 8px;
+        }
+        .options label {
+            font-weight: normal;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .options input[type="radio"] {
+            margin-top: 3px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #3182ce;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #2b6cb0;
+        }
+        #result {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #e6fffa;
+            border: 1px solid #319795;
+            border-radius: 6px;
+            text-align: center;
+        }
+        #result h2 {
+            margin: 0 0 10px 0;
+            color: #234e52;
+        }
+        #result p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>BÀI KIỂM TRA TIẾNG ANH - LỚP 12</h1>
+    <div class="subtitle">Chủ đề: Đồng nghĩa & Cấu trúc câu (Thời gian: 15 phút)</div>
+
+    <form id="quizForm">
+        <!-- Thông tin học sinh -->
+        <div class="student-info">
+            <div class="info-item">
+                <label for="fullname">Họ và tên học sinh:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Nhập đầy đủ họ và tên..." required>
+            </div>
+        </div>
+
+        <div class="instruction">
+            Mark the letter A, B, or C to indicate the sentence that is closest in meaning to each of the following questions.
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <div class="question-title">1. Developing consistency in revision proves to be crucial in the long run.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="A" required> A. However, revising regularly turns out to be an essential habit over time.</label></li>
+                <li><label><input type="radio" name="q1" value="B"> B. Therefore, consistent revision is completely useless for students.</label></li>
+                <li><label><input type="radio" name="q1" value="C"> C. Although students try to revise, it rarely helps them improve.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <div class="question-title">2. This is a common phenomenon among ambition-driven students, for example.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="A" required> A. For instance, ambitious students frequently exhibit this behavior.</label></li>
+                <li><label><input type="radio" name="q2" value="B"> B. For example, goal-oriented students never follow this pattern.</label></li>
+                <li><label><input type="radio" name="q2" value="C"> C. In conclusion, ambitious students rarely care about academic success.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card">
+            <div class="question-title">3. Such intense academic workload often triggers burnout among final-year students.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q3" value="A" required> A. Therefore, final-year students feel relaxed despite heavy study loads.</label></li>
+                <li><label><input type="radio" name="q3" value="B"> B. In short, study pressure helps eliminate exhaustion effectively.</label></li>
+                <li><label><input type="radio" name="q3" value="C"> C. As a result, heavy academic pressure frequently causes senior students to feel exhausted.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card">
+            <div class="question-title">4. Achieving a perfect score in the IELTS exam is by no means impossible for diligent learners.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q4" value="A" required> A. Getting a top score in IELTS is completely impossible for any learner.</label></li>
+                <li><label><input type="radio" name="q4" value="B"> B. Reaching a maximum score in IELTS is actually quite achievable for hard-working students.</label></li>
+                <li><label><input type="radio" name="q4" value="C"> C. Diligent students can only obtain average scores in language proficiency tests.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-card">
+            <div class="question-title">5. Far more vital than choosing a prestigious university is selecting a passion-driven career, indeed.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q5" value="A" required> A. In fact, picking a prestigious university is much more important than pursuing your passion.</label></li>
+                <li><label><input type="radio" name="q5" value="B"> B. In fact, choosing a career aligned with your passion is far more important than attending a famous university.</label></li>
+                <li><label><input type="radio" name="q5" value="C"> C. On the contrary, university reputation and career choices are both equally unimportant.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-card">
+            <div class="question-title">6. Underlying this major transition to online learning was a demand for schedule flexibility.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q6" value="A" required> A. The need for flexible schedules was the primary reason behind this major shift to online learning.</label></li>
+                <li><label><input type="radio" name="q6" value="B"> B. A sudden shift to online learning caused students to lose control of their schedules.</label></li>
+                <li><label><input type="radio" name="q6" value="C"> C. Flexible schedules restricted students' learning options significantly.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-card">
+            <div class="question-title">7. Be it overseas study or domestic education, acquiring self-reliance matters.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q7" value="A" required> A. Self-reliance is useful only if a student decides to study abroad.</label></li>
+                <li><label><input type="radio" name="q7" value="B"> B. Self-reliance is completely unnecessary when studying domestically.</label></li>
+                <li><label><input type="radio" name="q7" value="C"> C. Whether a student studies abroad or stays in their home country, learning self-reliance is valuable.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-card">
+            <div class="question-title">8. Demanding as the research project appeared at first, it significantly sharpened students' critical thinking skills.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q8" value="A" required> A. Because the research project was demanding, students struggled to think critically.</label></li>
+                <li><label><input type="radio" name="q8" value="B"> B. Although the research project felt challenging initially, it greatly improved students' critical thinking abilities.</label></li>
+                <li><label><input type="radio" name="q8" value="C"> C. The project was so simple that all students solved it without effort.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-card">
+            <div class="question-title">9. Central to a graduate's career progression lies the mastery of continuous learning, indeed.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q9" value="A" required> A. In fact, the core element of a graduate's career growth is mastering continuous learning.</label></li>
+                <li><label><input type="radio" name="q9" value="B"> B. Continuous learning is completely replaced by past achievements in career growth.</label></li>
+                <li><label><input type="radio" name="q9" value="C"> C. Lifelong learning is far less valuable than test scores in professional success.</label></li>
+            </ul>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-card">
+            <div class="question-title">10. Essential to mastering a new language is maintaining daily exposure and practice.</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q10" value="A" required> A. In fact, consistent daily practice and exposure are crucial for mastering a foreign language.</label></li>
+                <li><label><input type="radio" name="q10" value="B"> B. Daily exposure is completely unnecessary when learning a new language.</label></li>
+                <li><label><input type="radio" name="q10" value="C"> C. Foreign languages can only be mastered by studying grammar rules non-stop.</label></li>
+            </ul>
+        </div>
+
+        <button type="submit" class="submit-btn">Nộp Bài Kiểm Tra</button>
+    </form>
+
+    <!-- Khối hiển thị kết quả -->
+    <div id="result">
+        <h2>KẾT QUẢ BÀI KIỂM TRA</h2>
+        <p id="studentName"></p>
+        <p id="scoreText"></p>
+    </div>
+</div>
+
+<script>
+    const correctAnswers = {
+        q1: 'A',
+        q2: 'A',
+        q3: 'C',
+        q4: 'B',
+        q5: 'B',
+        q6: 'A',
+        q7: 'C',
+        q8: 'B',
+        q9: 'A',
+        q10: 'A'
+    };
+
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Ngăn trang web tải lại khi nộp bài
+
+        const fullname = document.getElementById('fullname').value;
+        let score = 0;
+        const total = Object.keys(correctAnswers).length;
+
+        for (let i = 1; i <= total; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === correctAnswers[`q${i}`]) {
+                score++;
+            }
+        }
+
+        // Hiển thị kết quả
+        document.getElementById('studentName').innerText = "Học sinh: " + fullname;
+        document.getElementById('scoreText').innerText = `Điểm số: ${score} / ${total} câu đúng (${(score/total)*10} điểm)`;
+        
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
